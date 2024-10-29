@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validación</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Imagen de cabecera -->
+        <img src="./img/pexels-canan-atakli-152148269-27947532.jpg" alt="Cabecera del formulario" width="200">
+
+        <h1>Formulario de Registro</h1>
+
+        <form action="#" onsubmit="return validarFormulario()">
+            <!-- Nombre -->
+            <div class="form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="1" maxlength="20">
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="form">
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+            </div>
+
+            <!-- Botones de submit y reset -->
+            <div class="form">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar Datos">
+            </div>
+        </form>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
